@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server 1 | Load Balancer TP</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #163253;
+      background: linear-gradient(135deg, #e8fff4, #eef5ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      padding: 48px 30px;
+      background: rgba(255,255,255,.92);
+      border: 1px solid #d9f5e7;
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(23, 80, 64, .12);
+      text-align: center;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand { font-size: 25px; font-weight: 800; }
+    .brand span { color: #f59e0b; }
+
+    .badge {
+      background: #dcfce7;
+      color: #047857;
+      padding: 10px 17px;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    .illustration {
+      font-size: 90px;
+      margin: 35px 0 15px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 47px);
+      line-height: 1.2;
+      margin: 10px 0;
+    }
+
+    h1 span { color: #059669; }
+
+    .subtitle {
+      color: #64748b;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .success {
+      margin-top: 35px;
+      padding: 22px;
+      border-radius: 18px;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      text-align: left;
+    }
+
+    .success strong {
+      display: block;
+      color: #047857;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .success p { margin: 0; line-height: 1.7; }
+
+    footer {
+      margin-top: 35px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="top">
+      <div class="brand"><span>aws</span> | Load Balancer TP</div>
+      <div class="badge">● Server 1</div>
+    </div>
+
+    <div class="illustration">☁️ ✅</div>
+
+    <h1><span>Hey!</span> The TP is done<br>on Server 1 🚀</h1>
+
+    <p class="subtitle">
+      The Application Load Balancer is working!<br>
+      This is the first EC2 instance
+    </p>
+
+    <section class="success">
+      <strong>✓ This is Server 1</strong>
+      <p>
+        we are connected to the first EC2 instance.
+        This page confirms that Server 1 is responding
+        to HTTP requests.
+      </p>
+    </section>
+
+    <footer>AWS · Elastic Load Balancing · TP3</footer>
+  </main>
+</body>
+</html>
+```
