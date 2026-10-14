@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Server 1 | Load Balancer TP</title>
+  <title>Server 2 | Load Balancer TP</title>
 
   <style>
     * { box-sizing: border-box; }
@@ -14,7 +14,7 @@
       min-height: 100vh;
       font-family: "Segoe UI", Arial, sans-serif;
       color: #163253;
-      background: linear-gradient(135deg, #e8fff4, #eef5ff);
+      background: linear-gradient(135deg, #fff7ed, #fff1f8);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -25,10 +25,10 @@
       width: 100%;
       max-width: 760px;
       padding: 48px 30px;
-      background: rgba(255,255,255,.92);
-      border: 1px solid #d9f5e7;
+      background: rgba(255,255,255,.94);
+      border: 1px solid #ffedd5;
       border-radius: 28px;
-      box-shadow: 0 24px 70px rgba(23, 80, 64, .12);
+      box-shadow: 0 24px 70px rgba(124, 70, 20, .12);
       text-align: center;
     }
 
@@ -44,8 +44,8 @@
     .brand span { color: #f59e0b; }
 
     .badge {
-      background: #dcfce7;
-      color: #047857;
+      background: #ffedd5;
+      color: #c2410c;
       padding: 10px 17px;
       border-radius: 30px;
       font-weight: 700;
@@ -62,7 +62,7 @@
       margin: 10px 0;
     }
 
-    h1 span { color: #059669; }
+    h1 span { color: #f59e0b; }
 
     .subtitle {
       color: #64748b;
@@ -70,23 +70,23 @@
       line-height: 1.7;
     }
 
-    .success {
+    .coming {
       margin-top: 35px;
       padding: 22px;
       border-radius: 18px;
-      background: #ecfdf5;
-      border: 1px solid #a7f3d0;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
       text-align: left;
     }
 
-    .success strong {
+    .coming strong {
       display: block;
-      color: #047857;
+      color: #c2410c;
       font-size: 19px;
       margin-bottom: 8px;
     }
 
-    .success p { margin: 0; line-height: 1.7; }
+    .coming p { margin: 0; line-height: 1.7; }
 
     footer {
       margin-top: 35px;
@@ -100,24 +100,24 @@
   <main class="card">
     <div class="top">
       <div class="brand"><span>aws</span> | Load Balancer TP</div>
-      <div class="badge">● Server 1</div>
+      <div class="badge">● Server 2</div>
     </div>
 
-    <div class="illustration">☁️ ✅</div>
+    <div class="illustration">☁️ 🛠️</div>
 
-    <h1><span>Hey!</span> The TP is done<br>on Server 1 🚀</h1>
+    <h1><span>Ooops!</span><br>I'm coming with Server 2 😎</h1>
 
     <p class="subtitle">
-      The Application Load Balancer is working!<br>
-      This is the first EC2 instance
+      Surprise! we've reached the second EC2 instance.<br>
+      Another server, same application, different response!
     </p>
 
-    <section class="success">
-      <strong>✓ This is Server 1</strong>
+    <section class="coming">
+      <strong>🚧 Hello from Server 2!</strong>
       <p>
-        we are connected to the first EC2 instance.
-        This page confirms that Server 1 is responding
-        to HTTP requests.
+        This page is served by the second EC2 instance.
+        Our Load Balancer can distribute requests
+        between multiple servers.
       </p>
     </section>
 
